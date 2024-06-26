@@ -16,6 +16,8 @@ html {
   --23px: 1.4375rem;
   --24px: 1.5rem;
   --32px: 2rem;
+
+  --border-color: hsl(0, 0%, 60%);
 }
 
 html,
@@ -59,7 +61,7 @@ main {
 }
 
 main {
-  border-top: 8px solid #999999;
+  border-top: 8px solid var(--border-color);
   background-color: hsl(0, 0%, 40%);
   padding: 72px 0px;
 }
@@ -71,7 +73,7 @@ main {
 }
 
 p {
-  line-height: 30px;
+  line-height: 1.5;
   font-size: var(--20px)
 }
 

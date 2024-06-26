@@ -30,11 +30,8 @@ body {
 /* Add styles here! */
 
 h1 {
-  font-size: var(--32px)
-}
-
-h2 {
-  font-size: var(--24px)
+  font-size: var(--32px);
+  margin-bottom: 3rem;
 }
 
 .max-width-wrapper {
@@ -55,10 +52,10 @@ h2 {
   color: hsl(160deg, 100%, 30%);
 }
 
-header,
+/* header,
 main {
   min-height: 50%;
-}
+} */
 
 main {
   border-top: 8px solid var(--border-color);
@@ -74,10 +71,16 @@ main {
 
 p {
   line-height: 1.5;
-  font-size: var(--20px)
+  font-size: var(--20px);
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0px
 }
 
 .indented-heading {
+  font-size: var(--24px);
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
   margin-left: -32px;

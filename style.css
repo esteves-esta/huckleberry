@@ -3,10 +3,81 @@
   font-family: 'Lato', sans-serif;
 }
 
+html {
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  --22px: 1.375rem;
+  --23px: 1.4375rem;
+  --24px: 1.5rem;
+  --32px: 2rem;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 /* Add styles here! */
+
+h1 {
+  font-size: var(--32px)
+}
+h2 {
+  font-size: var(--24px)
+}
+
+.max-width-wrapper {
+  margin: auto;
+  /* min-width: 342px; */
+  max-width: 800px;
+}
+
+.intro-chunk {
+  /* border: 1px solid red; */
+  padding: 24px;
+  padding-top: 96px;
+  padding-bottom: 64px;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+header,
+main {
+  min-height: 50%;
+}
+
+main {
+  border-top: 8px solid #999999;
+  background-color: hsl(0, 0%, 40%);
+  padding: 72px 0px;
+}
+
+.card {
+  border-bottom: 8px solid #999999;
+  padding: 24px;
+  background-color: white;
+}
+
+.card p {
+  line-height: 30px;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  margin-left: -32px;
+  margin-top: -16px;
+  max-width: max-content;
+  min-width: min-content;
+  padding: 16px 32px;
+}
